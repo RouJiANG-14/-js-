@@ -1,3 +1,15 @@
+#源址：https://github.com/Caryio/ChangeWechatSport
+#随机步数修改
+#变量：USER_PHONE
+#USER_PWD
+#STEP_MIN
+#STEP_MAX
+#
+#
+#
+
+
+
 import requests, time, re, json, os
 from random import randint
  
@@ -8,7 +20,7 @@ headers = {
 user = ''
 password = ''
 # step = ''
-step = str(randint(10121, 12302))
+step = str(randint(13121, 22302))
  
 def get_code(location):
     code_pattern = re.compile("(?<=access=).*?(?=&)")
