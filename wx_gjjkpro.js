@@ -88,7 +88,7 @@ class UserInfo {
             'Host': 'api.gaojihealth.cn',
             'authorization': this.ck,
         }
-        this.taskList = [{ "browsePageId": "100004", "browsePageUrl": "/modules/integral/integral-mall/index", "taskId": 729 }, { "browsePageId": "100015", "browsePageUrl": "/modules/storeEmployeeQRcode/index?pageType=1", "taskId": 730 }]
+        this.taskList = [{ "browsePageId": "100004", "browsePageUrl": "/modules/integral/integral-mall/index", "taskId": 729 }, { "browsePageId": "100015", "browsePageUrl": "/modules/storeEmployeeQRcode/index?pageType=1", "taskId": 730 }, {"browsePageId":"100015","browsePageUrl":"/modules/benefit-card/details/freeca?itemId=75592395179481363&businessId=81363","taskId":656}]
 
     }
 
@@ -118,7 +118,7 @@ class UserInfo {
             let options = {
                 url: `https://api.gaojihealth.cn/gulosity/api/dkUserEvent/everyDaySign`,
                 headers: this.headersPost,
-                body: JSON.stringify({ "businessId": 212798, "userId": this.userId, "taskId": 372 })
+                body: JSON.stringify({ "businessId": 81363, "userId": this.userId, "taskId": 372 })
             }
             this.headersPost['Content-Length'] = options.body.length
 
